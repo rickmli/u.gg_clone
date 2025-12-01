@@ -11,7 +11,7 @@ function ChampBuildPage() {
     >
       <header></header>
       {/* wrapper */}
-      <div className="chmpInfo w-auto max-w-[1600px] p-8 outline-lime-100">
+      <div className="chmpInfo w-auto max-w-[1200px] p-8 outline-lime-100">
         {/* champ content */}
         <div className="flex h-24 items-center gap-5">
           {/* champ icon */}
@@ -153,7 +153,7 @@ function ChampBuildPage() {
 
           <div className="flex gap-0.5">
             {/* rune */}
-            <div className="flex-1 bg-[#202042] px-4 py-6 pt-4">
+            <div className="flex-1 bg-[#202042] px-6 py-6 pt-4">
               <div className="mb-4 flex items-center justify-between">
                 <div className="flex items-center">
                   <div className="mr-4 h-5 w-0.5 bg-blue-600"></div>
@@ -254,7 +254,7 @@ function ChampBuildPage() {
             </div>
             <div className="flex flex-1 flex-col justify-center gap-0.5">
               {/* summ spells */}
-              <div className="bg-[#191937] px-4 py-6 pt-4">
+              <div className="bg-[#191937] px-6 py-6 pt-4">
                 <div className="mb-4 flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="mr-4 h-5 w-0.5 bg-blue-600"></div>
