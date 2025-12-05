@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { IoIosSearch } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
@@ -252,6 +253,7 @@ function ChampBuildPage() {
                 </div>
               </div>
             </div>
+
             <div className="flex flex-1 flex-col justify-center gap-0.5">
               {/* summ spells */}
               <div className="bg-[#191937] px-6 py-6 pt-4">
@@ -280,8 +282,122 @@ function ChampBuildPage() {
               </div>
             </div>
           </div>
-          <div>thoughest match ups</div>
-          <div>skills recommandation</div>
+          <div className="mt-4 bg-[#202042] px-6 py-6 pt-4">
+            <div className="flex items-center">
+              <div className="mr-4 h-5 w-0.5 bg-blue-600"></div>
+              <div>Thoughest Matchups</div>
+              <span className="ml-4 text-gray-500">
+                These champions counter Pyke
+              </span>
+            </div>
+            <div className="mt-3 overflow-x-scroll">
+              <div className="flex gap-4">
+                {/* card */}
+                <div className="flex w-25 flex-col items-center justify-center bg-[#11112B] px-3 py-3 text-center">
+                  {/* icon */}
+                  <div className="h-10 w-10 rounded-full bg-white"></div>
+                  <span className="">Elise</span>
+                  <div className="my-1 h-px w-full bg-gray-800"></div>
+                  <span className="text-red-600">44.3%</span>
+                  <span className="text-xs text-nowrap text-blue-200">
+                    1,000 Matches
+                  </span>
+                </div>
+                {/* cards */}
+                {Array.from({ length: 10 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex w-25 flex-col items-center justify-center bg-[#11112B] px-3 py-3 text-center"
+                  >
+                    <div className="h-10 w-10 rounded-full bg-white" />
+                    <span>Elise</span>
+                    <div className="my-1 h-px w-full bg-gray-800" />
+                    <span className="text-red-600">44.3%</span>
+                    <span className="text-xs text-nowrap text-blue-200">
+                      1,000 Matches
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex gap-0.5">
+            <div className="mt-4 bg-[#202042] px-6 py-6 pt-4">
+              <div className="mb-3 flex items-center">
+                <div className="mr-4 h-5 w-0.5 bg-blue-600"></div>
+                <div>Skill Priority</div>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <span className="block h-8 w-8 bg-white"></span>
+                <FaArrowRight />
+                <span className="block h-8 w-8 bg-white"></span>
+                <FaArrowRight />
+                <span className="block h-8 w-8 bg-white"></span>
+              </div>
+              <div className="mt-4 text-center">
+                <p className="text-red-300">48.43% WR</p>
+                <p className="text-xs text-blue-200">9,083 Matches</p>
+              </div>
+            </div>
+            <div className="mt-4 flex-1 bg-[#202042] px-6 py-6 pt-4">
+              <div className="mb-3 flex items-center">
+                <div className="mr-4 h-5 w-0.5 bg-blue-600"></div>
+                <div>Skill Path</div>
+                <span className="ml-4 text-gray-500">
+                  Most popular ability leveling order
+                </span>
+              </div>
+              <div className="grid grid-cols-[minmax(100px,250px)_1fr] overflow-x-scroll">
+                <div className="flex flex-col gap-1">
+                  <div className="flex items-center bg-[#11112B]">
+                    <span className="mr-2 inline-block h-7 w-7 bg-white">
+                      1
+                    </span>
+                    <span>Bone Skewer</span>
+                  </div>
+                  <div className="flex items-center bg-[#11112B]">
+                    <span className="mr-2 inline-block h-7 w-7 bg-white">
+                      1
+                    </span>
+                    <span>Ghostwater Dive</span>
+                  </div>
+                  <div className="flex items-center bg-[#11112B]">
+                    <span className="mr-2 inline-block h-7 w-7 bg-white">
+                      1
+                    </span>
+                    <span>Phantom Undertow</span>
+                  </div>
+                  <div className="flex items-center bg-[#11112B]">
+                    <span className="mr-2 inline-block h-7 w-7 bg-white">
+                      1
+                    </span>
+                    <span>Death From Below</span>
+                  </div>
+                  <div className="flex items-center bg-[#11112B]">
+                    <span className="mr-2 inline-block h-7 w-7 bg-white">
+                      1
+                    </span>
+                    <span>Gift of the Drowned Ones</span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-3">
+                  {Array.from({ length: 5 }, (_, outerIndex) => (
+                    <div key={outerIndex} className="flex gap-1">
+                      {Array.from({ length: 18 }, (_, innerIndex) => (
+                        <div
+                          key={`${outerIndex}-${innerIndex}`}
+                          className="ml-2 flex h-7 w-7 items-center justify-center rounded-sm bg-[#3373FA]"
+                        >
+                          {innerIndex + 1}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
           <div>items</div>
         </div>
         <footer></footer>
