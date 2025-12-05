@@ -1,4 +1,4 @@
-import ChampBuildPage from "./pages/champBuildPage";
+import ChampBuildPage from "./pages/ChampBuildPage.tsx";
 
 function App() {
   return (

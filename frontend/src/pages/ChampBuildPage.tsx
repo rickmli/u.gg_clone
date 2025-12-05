@@ -6,7 +6,7 @@ import { RiToolsFill } from "react-icons/ri";
 function ChampBuildPage() {
   return (
     <div
-      className={`flex h-screen justify-center overflow-hidden`}
+      className={`flex h-screen justify-center overflow-scroll`}
       style={{ backgroundColor: "#07071F", color: "#CDDCFE" }}
     >
       <header></header>
